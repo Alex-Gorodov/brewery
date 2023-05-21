@@ -1,0 +1,47 @@
+@import "../../style"
+  
+.header
+  position: relative
+  padding: 20px
+  background-color: $black
+  box-shadow: 0 0 10px 10px $dark-gray
+
+  &__toggler
+    position: relative
+    z-index: 10
+    height: 30px
+    width: 40px
+    padding: 0
+    border: none
+    background-color: transparent
+    cursor: pointer
+
+    & span
+      @include burger-line
+      position: relative
+      transition: 0.5s
+
+      &::after
+        @include burger-line
+        content: ""
+        position: absolute
+        top: 10px
+        transition: 0.5s
+
+      &::before
+        @include burger-line
+        content: ""
+        position: absolute
+        top: -10px
+        transition: 0.5s
+
+    &--opened
+      & span
+        transform: translateX(-100px)
+        &::after
+          // top: 5px
+          transform: rotate(45deg) translate3d(65px, -80px, 0px)
+        &::before
+          // top: 5px
+          transform: rotate(-45deg) translate3d(65px, 80px, 0px)
+        

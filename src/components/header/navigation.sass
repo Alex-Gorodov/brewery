@@ -1,0 +1,39 @@
+@import "../../style"
+  
+.navigation
+  position: absolute
+  left: 0
+  top: -400%
+  width: 100%
+  transition: 0.5s
+
+  &--opened
+    top: 0
+
+  &__list
+    @include reset-list
+    margin: 0
+    padding: 0
+    display: flex
+    align-items: stretch
+    flex-direction: column
+
+  &__link
+    display: block
+    margin: 0
+    padding: 4px 24px
+    background-color: $black
+
+    color: $white
+    text-decoration: none
+    font-family: $main-font
+    font-size: 30px
+    line-height: 2
+    text-align: center
+    
+    transition: 0.3s
+
+    &:hover
+      background-color: $dark-gray
+      color: $black
+      box-shadow: inset 0 0 5px 0px $black
