@@ -17,7 +17,7 @@ export function PromoItem({card}: PromoProps): JSX.Element {
     >
       <h2 className="promo__title">{card.title}</h2>
       <p className="promo__description">{card.description}</p>
-      <a className="button promo__btn" href="#!">{card.button}</a>
+      <a className="button promo__btn" href="#">{card.button}</a>
     </li>
   );
 }
