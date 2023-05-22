@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/brewery/static/css/main.0e84442b.css",
-    "main.js": "/brewery/static/js/main.1cf909cc.js",
+    "main.css": "/brewery/static/css/main.43e79d73.css",
+    "main.js": "/brewery/static/js/main.c34f715e.js",
     "static/media/logo.svg": "/brewery/static/media/logo.6c3d3c01595a0cb16b0912f1a2841aba.svg",
+    "static/media/promo4.jpg": "/brewery/static/media/promo4.53ba4bad89e19e9d4b04.jpg",
+    "static/media/promo2.jpg": "/brewery/static/media/promo2.ecb52b2bd24ee881823b.jpg",
+    "static/media/promo3.jpg": "/brewery/static/media/promo3.c93ab40b7295f5468537.jpg",
+    "static/media/promo5.jpg": "/brewery/static/media/promo5.4b72a1d42cdfa9d08c77.jpg",
+    "static/media/promo1.jpg": "/brewery/static/media/promo1.13e6de91efa5c282ee76.jpg",
     "static/media/baghappy.svg": "/brewery/static/media/baghappy.fe7177d4e938c497054046649da7ff85.svg",
     "static/media/gift.svg": "/brewery/static/media/gift.03f8da1cb1ed865fd50191fd77920774.svg",
     "static/media/house.svg": "/brewery/static/media/house.c682dfa2069a73b1e6a2abbe742d1134.svg",
     "index.html": "/brewery/index.html",
     "static/media/heart.svg": "/brewery/static/media/heart.64d8a20792cd90da0205660f3c65e9a7.svg",
-    "main.0e84442b.css.map": "/brewery/static/css/main.0e84442b.css.map",
-    "main.1cf909cc.js.map": "/brewery/static/js/main.1cf909cc.js.map"
+    "main.43e79d73.css.map": "/brewery/static/css/main.43e79d73.css.map",
+    "main.c34f715e.js.map": "/brewery/static/js/main.c34f715e.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e84442b.css",
-    "static/js/main.1cf909cc.js"
+    "static/css/main.43e79d73.css",
+    "static/js/main.c34f715e.js"
   ]
 }
