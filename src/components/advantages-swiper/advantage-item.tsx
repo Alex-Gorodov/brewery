@@ -8,7 +8,7 @@ type AdvantageProps = {
 export function AdvantageItem({advantage}: AdvantageProps): JSX.Element {
   return ( 
     <div className="advantage__wrapper">
-      <img src={advantage.icon} alt="" />
+      <img className='advantage__icon' src={advantage.icon} alt="" />
       <p className="advantage__title">{advantage.title}</p>
       <p className="advantage__description">{advantage.description}</p>
     </div>

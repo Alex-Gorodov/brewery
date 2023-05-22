@@ -2,8 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 import './header.sass';
 import './navigation.sass';
-import { Navigation } from 'swiper';
-
 
 function Header(): JSX.Element {
   const [isMenuOpened, setMenuOpened] = useState(false);
