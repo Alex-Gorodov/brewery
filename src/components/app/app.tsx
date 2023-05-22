@@ -1,15 +1,17 @@
 import React from 'react';
 import '../../style.sass';
-import Promo from '../promo/promo';
+import Hero from '../hero/hero';
 import Header from '../header/header';
 import AdvantagesSwiper from '../advantages-swiper/advantages-swiper';
+import { PromoList } from '../promo/promo-list';
 
 function App() {
   return (
     <>
       <Header />
-      <Promo />
+      <Hero />
       <AdvantagesSwiper />
+      <PromoList />
     </>
   );
 }
