@@ -3,7 +3,7 @@ import cn from 'classnames';
 import './header.sass';
 import './navigation.sass';
 
-function Header(): JSX.Element {
+export function Header(): JSX.Element {
   const [isMenuOpened, setMenuOpened] = useState(false);
   const menuRef = useRef<HTMLButtonElement>(null);
 
@@ -50,5 +50,3 @@ function Header(): JSX.Element {
     </header>
   );
 }
-
-export default Header;
