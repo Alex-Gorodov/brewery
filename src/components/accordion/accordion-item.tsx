@@ -8,6 +8,7 @@ type AccordionItemProps = {
 
 export function AccordionItem({item}: AccordionItemProps): JSX.Element {
   const [isActive, setIsActive] = useState(false);
+  
   function handleActive(): void {
     setIsActive(!isActive);
   }
@@ -23,18 +24,17 @@ export function AccordionItem({item}: AccordionItemProps): JSX.Element {
         </button>
       </div>
       {
-        isActive && item.text
-        && <p className="accordion__text">
+        isActive && <p className="accordion__text">
           {
-            item.text
+            isActive && item.text
           }
         </p>
       }
       {
-        isActive && item.links
-        && <ul className="accordion__links">
+        item.links && isActive &&
+        <ul className="accordion__links">
           {
-            item.links.map((link) => (
+            isActive && item.links.map((link) => (
               <li>
                 <a href="#!" className="accordion__link" key={link.length}>
                   {link}

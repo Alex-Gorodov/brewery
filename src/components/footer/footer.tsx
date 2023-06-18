@@ -91,6 +91,14 @@ export function Footer(): JSX.Element {
             </div>
           </div>
         }
+        <div className="footer__copyright">
+          <span>
+          &#169; 2023 Braga Brewery
+          </span>
+          <span>
+            Home of the best craft beer.
+          </span>
+        </div>
       </div>
     </footer>
   );
