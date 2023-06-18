@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AccordionItemType } from "../../types/accordion-item-type";
+import cn from "classnames";
 import './accordion.sass'
 
 type AccordionItemProps = {
@@ -8,6 +9,11 @@ type AccordionItemProps = {
 
 export function AccordionItem({item}: AccordionItemProps): JSX.Element {
   const [isActive, setIsActive] = useState(false);
+  const contentClassName = cn('accordion__content', {
+    'accordion__text': item.text,
+    'accordion__links': item.links,
+    'accordion__content--active': isActive
+  })
   
   function handleActive(): void {
     setIsActive(!isActive);
@@ -24,17 +30,15 @@ export function AccordionItem({item}: AccordionItemProps): JSX.Element {
         </button>
       </div>
       {
-        isActive && <p className="accordion__text">
-          {
-            isActive && item.text
-          }
+        <p className={contentClassName}>
+          {item.text}
         </p>
       }
       {
-        item.links && isActive &&
-        <ul className="accordion__links">
+        // item.links && isActive &&
+        <ul className={contentClassName}>
           {
-            isActive && item.links.map((link) => (
+            item.links?.map((link) => (
               <li>
                 <a href="#!" className="accordion__link" key={link.length}>
                   {link}
@@ -44,7 +48,6 @@ export function AccordionItem({item}: AccordionItemProps): JSX.Element {
           }
         </ul>
       }
-
     </div>
   );
 }
